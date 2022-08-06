@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     
+
+
+<style>
+    #navcontainer>img{
+      width: 100%;
+      height:  900px;
+    }  
+    #worksection{
+      /* border:1px solid red; */
+      height: 410px;
+    
+      display: grid;
+          grid-template-columns:repeat(3,1fr) ;
+          grid-template-rows: repeat(2,100px);
+          grid-gap:10px ;
+    }
+
+    #worksection>div:nth-child(1) {
+         
+         grid-area:1/1/2/3;
+     }
+     #worksection>div:nth-child(2){
+         grid-area:1/3/3/4;
+     }
+     
+    #left>img{
+      margin-top: 5%;
+      margin-left: 20%;
+       /* border:1px solid blue; */
+     }
+     .left1>img{
+        
+      margin-top: 25%;
+       /* border:1px solid red; */
+       margin-left: 40%;
+     }
+     .left2>img{
+        
+      margin-top: 25%;
+       /* border:1px solid red; */
+       margin-left: -5%;
+     }
+ .right{
+       margin-top: 5%;
+       /* border:1px solid blue; */
+       margin-left:-40%
+ }
+
+ #Apartmentsection{
+    text-align: center;
+  margin-top:1%;
+   /* border:1px solid red; */
+   height: 510px;
+ }
+ .aparttop{
+  /* border:1px solid blue; */
+  justify-content: center;
+  display:flex;
+   
+ }
+ .aparttop>div{
+  padding-left: 1%;
+ }
+ #postsection{
+          display: grid;
+          grid-template-columns: repeat(2,550px);
+          grid-template-rows: repeat(1,100px);
+          height:1200px;
+          /* border:1px solid red; */
+          grid-gap: 10px,
+          
+ }
+ #postleft{
+  grid-template-columns:repeat(2,1fr);
+          grid-template-rows:repeat(3,50px);
+          display: grid;
+          grid-gap:10px;   
+         padding-top:5px;
+
+         /* border:1px solid red; */
+ }
+
+ #tagsection{
+  /* border:1px solid blue; */
+  /* display: flex; */
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+ }
+ #tag1{
+  display:flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+ }
+ #tag1>h3{
+  margin-left: 10px;
+ }
+ h3{
+  background-color: gray;
+  /* border:1px solid blue; */
+  border-radius: 5px;
+  text-align: center;
+   padding-top: 10px;
+  height: 40px;
+  width: 10%;
+ }
+ @media only screen and (min-width: 650px) and (max-width: 768px) {
+  #navcontainer>img{
+      width: 100%;
+      height:  900px;
+    }
+
+    #worksection{
+      /* border:1px solid red; */
+      height: 610px;
+      grid-template-columns: 30% 30% ;
+      grid-template-rows: 200px 180px ;
+  /* height: 600px; */
+  row-gap: 20px;
+  justify-content: space-evenly;
+  text-align: left;
+          
+    }
+    #left>img{
+      width: 300px;
+      margin: 40px;
+       height: 150px;
+      margin-top: 5%;
+       margin-left: 10%; 
+      
+       /* border:1px solid blue; */
+     }
+     .left1>img{
+        
+      margin-top: 65%;
+       /* border:1px solid red; */
+       margin-left: 40%;
+     }
+     .left2>img{
+        
+      margin-top: 65%;
+       /* border:1px solid red; */
+       margin-left:60%;
+     }
+     .right{
+      /* width: 10px; */
+      height:250px;
+     
+      /* border:1px solid blue; */
+       /* margin-left:-40% */
+      
+
+ }
+
+}
+
+@media screen and (max-width: 850px) {
+
+#navcontainer>img{
+      width: 100%;
+      height:  900px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+#navcontainer>img{
+      width: 100%;
+      height:  900px;
+    }
+
+}
+     
+  </style>
+
+</head>
+<body>
+    <div>
+        <div id="navcontainer">
+         <img src="https://saber-columnist-50d.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F9cd324f4-0a16-44ef-8191-2f1baddd950d%2FScreenshot_2022-08-05_at_5.41.53_PM.png?table=block&id=d433c9e6-7f82-4d8b-baaf-8c34757da1f1&spaceId=cee71247-c529-4d1e-ad44-34f1b0f1b1c6&width=670&userId=&cache=v2" alt="logo" id="logo">
+        </div>
+
+        <div id="worksection">
+   <!-- <h1>Our Gallery</h1>
+   <p>Discover Our work</p> -->
+
+   <div id="left">
+    <img  src="https://placehold.jp/415x150.png"  >
+   </div> 
+   <div  id="right">
+    <img  src="https://placehold.jp/350x390.png"  >
+   </div>
+   <div class="left1">
+    <img src="https://placehold.jp/200x200.png">
+   </div>
+   <div class="left2">
+    <img src="https://placehold.jp/200x200.png">
+   </div>
+        </div>
+
+
+        <div id="Apartmentsection">
+            <h1>Appartment Room</h1>
+           <div class="aparttop">
+             <div>
+                <img src="https://placehold.jp/250x180.png"  >
+             </div>
+             <div>
+                <img src="https://placehold.jp/250x180.png"  >
+             </div>
+             <div>
+                <img src="https://placehold.jp/250x180.png"  >
+             </div>
+             <div>
+                <img src="https://placehold.jp/250x180.png"  >
+             </div>
+           </div>   
+           <div class="aparttop">
+            <div>
+                <img src="https://placehold.jp/250x180.png"  >
+             </div>
+             <div>
+                <img src="https://placehold.jp/250x180.png"  >
+             </div>
+             <div>
+                <img src="https://placehold.jp/250x180.png"  >
+             </div>
+             <div>
+                <img src="https://placehold.jp/250x180.png"  >
+             </div>
+           </div>   
+        </div>
+
+
+        <div id="postsection">
+            <div id="postleft"> 
+            <div id="postleft1">
+                <div>
+                    <img src="https://placehold.jp/150x150.png" alt="">
+                </div>  
+                    <h3>visiting</h3>
+                    <div class="textDiv">
+                     
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam officiis fugiat, qui nostrum libero dolorum ut sunt voluptas corrupti aspernatur aliquid laboriosam obcaecati corporis aperiam suscipit, fugit repellat distinctio quis?</p>
+                     <p >Lorem ipsum dolor sit amet consectetur  .</p>
+                 </div>  
+               
+                <div>
+                    <img src="https://placehold.jp/150x150.png" alt="">
+                </div>  
+                    <h3>visiting</h3>
+                    <div class="textDiv">
+                     
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam officiis fugiat, qui nostrum libero dolorum ut sunt voluptas corrupti aspernatur aliquid laboriosam obcaecati corporis aperiam suscipit, fugit repellat distinctio quis?</p>
+                     <p >Lorem ipsum dolor sit amet consectetur  .</p>
+                 </div>  
+            
+                 <div>
+                    <img src="https://placehold.jp/150x150.png" alt="">
+                </div>  
+                    <h3>visiting</h3>
+                    <div class="textDiv">
+                     
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam officiis fugiat, qui nostrum libero dolorum ut sunt voluptas corrupti aspernatur aliquid laboriosam obcaecati corporis aperiam suscipit, fugit repellat distinctio quis?</p>
+                     <p >Lorem ipsum dolor sit amet consectetur  .</p>
+                 </div>  
+                
+                
+            
+                
+                </div>
+
+
+
+                <div id="postleft2">
+                    <div>
+                        <img src="https://placehold.jp/150x150.png" alt="">
+                    </div>  
+                        <h3>visiting</h3>
+                        <div class="textDiv">
+                         
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam officiis fugiat, qui nostrum libero dolorum ut sunt voluptas corrupti aspernatur aliquid laboriosam obcaecati corporis aperiam suscipit, fugit repellat distinctio quis?</p>
+                         <p >Lorem ipsum dolor sit amet consectetur  .</p>
+                     </div>  
+                   
+                    <div>
+                        <img src="https://placehold.jp/150x150.png" alt="">
+                    </div>  
+                        <h3>visiting</h3>
+                        <div class="textDiv">
+                         
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam officiis fugiat, qui nostrum libero dolorum ut sunt voluptas corrupti aspernatur aliquid laboriosam obcaecati corporis aperiam suscipit, fugit repellat distinctio quis?</p>
+                         <p >Lorem ipsum dolor sit amet consectetur  .</p>
+                     </div>  
+                
+                     <div>
+                        <img src="https://placehold.jp/150x150.png" alt="">
+                    </div>  
+                        <h3>visiting</h3>
+                        <div class="textDiv">
+                         
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam officiis fugiat, qui nostrum libero dolorum ut sunt voluptas corrupti aspernatur aliquid laboriosam obcaecati corporis aperiam suscipit, fugit repellat distinctio quis?</p>
+                         <p >Lorem ipsum dolor sit amet consectetur  .</p>
+                     </div>  
+                    </div>
+                    
+                    </div>
+
+               
+
+            </div id="postright">
+                <h1>About </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum magnam accusantium rem iste tempora optio quibusdam. A cumque earum totam obcaecati commodi accusantium deleniti blanditiis repellendus exercitationem. Earum, sunt reprehenderit.</p>
+            <div>
+
+            </div>
+   
+  
+    </div>
+
+
+    <!-- //////tags////////// -->
+
+    <div id="tagsection">
+        <h1>tags</h1>
+        <div id="tag1"> 
+   
+         <h3>SALAD</h3>
+         <h3>PLACES</h3>
+         <h3>TIPS</h3>
+         <h3>FRIENDS</h3>
+         <h3>TRAVEL</h3>
+         <h3>EXERCISE</h3>
+        </div>
+        <div  id="tag1"> 
+         <h3>READING</h3>
+         <h3>RUNNING</h3>
+         <h3>SELF-HELP</h3>
+         <h3>VACATION</h3>
+        </div>
+    </div>
+</body>
+</html>
